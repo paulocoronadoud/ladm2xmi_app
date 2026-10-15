@@ -69,3 +69,7 @@ Pruebe en este orden. Cambie el dialecto a OMG UML 2.1, cambie la versión a XMI
 pip install pyinstaller
 pyinstaller --onefile --windowed --name ConvertidorLADMCOL ladm_uml_a_xmi.py
 ```
+## Autor
+Semillero de Investigación OSGeoLAB-UD
+osgeolab@udistrital.edu.co
+Tecnologías geoespaciales e Inteligencia Artificial Geoespacial (GeoAI) de software libre y código abierto 
