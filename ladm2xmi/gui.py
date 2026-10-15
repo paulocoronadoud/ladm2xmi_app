@@ -117,8 +117,8 @@ class App(tk.Tk):
     BOOLS = ["report_html", "report_csv", "report_json", "report_txt", "open_report", "pretty_print",
              "flatten_ili_files", "sort_alphabetically", "sanitize_names", "enum_include_nodes",
              "include_dependencies", "mandatory_forces_lower_one", "emit_documentation", "emit_tagged_values",
-             "emit_type_details", "emit_notes", "emit_source_info", "emit_untranslatable", "list_converted",
-             "list_excluded"]
+             "emit_type_details", "emit_notes", "emit_diagrams", "emit_source_info", "emit_untranslatable",
+             "list_converted", "list_excluded"]
     STRS = ["input_path", "output_path", "report_dir", "dialect", "xmi_version", "model_name", "id_prefix",
             "excluded_names", "name_source", "language", "structure_as", "domain_mode", "enum_separator",
             "inline_enum_pattern", "primitive_mode", "prim_pkg_name", "ili_pkg_name", "navigability",
@@ -408,9 +408,10 @@ class App(tk.Tk):
         self.row_check(lf, "Documentación de cada elemento", "emit_documentation", 0)
         self.row_check(lf, "Valores etiquetados de INTERLIS (por ejemplo ili2db.dispName)", "emit_tagged_values", 1)
         self.row_check(lf, "Detalles del tipo INTERLIS (longitud de texto, rango, unidad)", "emit_type_details", 2)
-        self.row_check(lf, "Notas de los diagramas, en el paquete al que pertenece el diagrama", "emit_notes", 3)
-        self.row_check(lf, "Datos del archivo de origen (versión, autor, archivo .ili, VERSION, ISSUER)", "emit_source_info", 4)
-        self.row_check(lf, "Lo que UML no admite, como la extensión de temas (TOPIC EXTENDS)", "emit_untranslatable", 5)
+        self.row_check(lf, "Generar diagramas en el XMI a partir de la información de presentación del .uml", "emit_diagrams", 3)
+        self.row_check(lf, "Notas de los diagramas, en el paquete al que pertenece el diagrama", "emit_notes", 4)
+        self.row_check(lf, "Datos del archivo de origen (versión, autor, archivo .ili, VERSION, ISSUER)", "emit_source_info", 5)
+        self.row_check(lf, "Lo que UML no admite, como la extensión de temas (TOPIC EXTENDS)", "emit_untranslatable", 6)
 
     # --- pestana reporte -----------------------------------------------
     def build_report_tab(self):

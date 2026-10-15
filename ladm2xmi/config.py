@@ -77,11 +77,16 @@ class Config:
     include_dependencies: bool = True
     mandatory_forces_lower_one: bool = True
 
+    # Nombres de paquetes auxiliares para elementos no-standard
+    gen_pkg_name: str = "Relaciones_Generalizacion"
+    import_pkg_name: str = "Dependencias_IliImport"
+
     # Informacion adicional como comentarios
     emit_documentation: bool = True
     emit_tagged_values: bool = True
     emit_type_details: bool = True
     emit_notes: bool = True
+    emit_diagrams: bool = True
     emit_source_info: bool = True
     emit_untranslatable: bool = True
 

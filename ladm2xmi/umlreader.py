@@ -163,3 +163,36 @@ class UmlFile:
             val = tv.f("DataValue") or ""
             out.append((key, val))
         return out
+
+    def presentation_element(self, el):
+        """Devuelve el elemento de presentación asociado a un elemento del modelo, si existe."""
+        for p in self.order:
+            if not p.is_presentation:
+                continue
+            href = p.f("Href")
+            if href == el.tid:
+                return p
+        return None
+
+    def diagram_elements(self, diagram_tid):
+        """Devuelve los elementos de presentación hijos de un diagrama."""
+        out = []
+        for p in self.order:
+            if not p.is_presentation:
+                continue
+            d = p.f("Diagram")
+            if d == diagram_tid:
+                out.append(p)
+        return out
+
+    def waypoints(self, pres_el):
+        """Devuelve la lista de waypoints (x, y) de un elemento de presentación."""
+        pts = []
+        for wp in pres_el.el.findall(self.ns + "Waypoint"):
+            try:
+                x = float(wp.get("x", 0))
+                y = float(wp.get("y", 0))
+                pts.append((x, y))
+            except (ValueError, TypeError):
+                pass
+        return pts

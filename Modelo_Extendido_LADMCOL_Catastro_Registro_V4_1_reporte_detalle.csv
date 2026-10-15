@@ -1,0 +1,273 @@
+﻿Tipo de elemento;Estado;Nombre;Ruta;TID;Motivo
+ModelDef;Excluido por la selección;INTERLIS;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1;3788;El modelo fue excluido de la selección
+EnumElement;Convertido con pérdida parcial;PH;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_CondicionPredioTipo;4755;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Condominio;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_CondicionPredioTipo;4756;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Parque_Cementerio;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_CondicionPredioTipo;4757;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Residencial;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_UsoUConsTipo;2193;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Comercial;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_UsoUConsTipo;2194;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Industrial;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_UsoUConsTipo;2195;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Institucional;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_UsoUConsTipo;2196;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Anexo;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_UsoUConsTipo;2197;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Predio;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_PredioTipo;5074;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Predio.Publico;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_PredioTipo;6135;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Catastro;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_PuntoTipo;5632;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Etnico;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_AutoreconocimientoEtnicoTipo;8733;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Mutacion_Primera_Clase;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_MutacionTipo;3452;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Mutacion_Segunda_Clase;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_MutacionTipo;3453;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Mutacion_Tercera_Clase;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_MutacionTipo;3454;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Mutacion_Cuarta_Clase;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_MutacionTipo;3455;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Mutacion_Quinta_Clase;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_MutacionTipo;3456;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Rectificaciones;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_MutacionTipo;3457;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Modificaciones;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_MutacionTipo;3459;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Cancelaciones;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_MutacionTipo;3460;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+EnumElement;Convertido con pérdida parcial;Documento_Publico;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::CR_FuenteAdministrativaTipo;7950;Nodo de enumeración jerárquica sin literal propio, solo se generan las hojas
+DomainDef;Convertido con pérdida parcial;GM_Point2D;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::ISO19107_PLANAS_V3_1;883;Dominio convertido como tipo de dato sin definición formal (se conserva solo la descripción)
+DomainDef;Convertido con pérdida parcial;GM_Curve2D;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::ISO19107_PLANAS_V3_1;886;Dominio convertido como tipo de dato sin definición formal (se conserva solo la descripción)
+DomainDef;Convertido con pérdida parcial;GM_Surface2D;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::ISO19107_PLANAS_V3_1;884;Dominio convertido como tipo de dato sin definición formal (se conserva solo la descripción)
+DomainDef;Convertido con pérdida parcial;GM_Point3D;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::ISO19107_PLANAS_V3_1;893;Dominio convertido como tipo de dato sin definición formal (se conserva solo la descripción)
+DomainDef;Convertido con pérdida parcial;GM_Curve3D;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::ISO19107_PLANAS_V3_1;2827;Dominio convertido como tipo de dato sin definición formal (se conserva solo la descripción)
+DomainDef;Convertido con pérdida parcial;GM_Surface3D;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::ISO19107_PLANAS_V3_1;1322;Dominio convertido como tipo de dato sin definición formal (se conserva solo la descripción)
+UnitDef;No convertido (perdido);COP;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::LADM_COL_v_4_0_1_Nucleo;3097;Las unidades de medida INTERLIS no tienen equivalente en UML
+UnitDef;No convertido (perdido);Area;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::LADM_COL_v_4_0_1_Nucleo;929;Las unidades de medida INTERLIS no tienen equivalente en UML
+UnitDef;No convertido (perdido);m2;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::LADM_COL_v_4_0_1_Nucleo;3193;Las unidades de medida INTERLIS no tienen equivalente en UML
+UnitDef;No convertido (perdido);cm;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::LADM_COL_v_4_0_1_Nucleo;237;Las unidades de medida INTERLIS no tienen equivalente en UML
+DomainDef;Convertido con pérdida parcial;Integer;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::LADM_COL_v_4_0_1_Nucleo::LADM_Nucleo;3247;Dominio convertido como tipo de dato. Se conserva la definición solo como comentario
+DomainDef;Convertido con pérdida parcial;Real;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::LADM_COL_v_4_0_1_Nucleo::LADM_Nucleo;1246;Dominio convertido como tipo de dato. Se conserva la definición solo como comentario
+DomainDef;Convertido con pérdida parcial;Peso;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::ISO::LADM_COL_v_4_0_1_Nucleo::LADM_Nucleo;3441;Dominio convertido como tipo de dato. Se conserva la definición solo como comentario
+ModelDef;Excluido por la selección;INTERLIS_TOPOLOGY;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::TOOLS;19;El modelo fue excluido de la selección
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;635;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadEspacial;;1065;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadEspacial;;1062;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_CadenaCarasLimite;;1650;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_CadenaCarasLimite;;1651;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+DomainExtends;No convertido (perdido);extiende COL_DocumentoTipo;;950;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+DomainExtends;No convertido (perdido);extiende COL_FuenteAdministrativaTipo;;1711;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1813;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1809;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1815;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1816;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1818;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1823;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1814;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2313;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2311;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2304;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2299;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2298;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2312;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2315;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2314;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2307;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1817;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2302;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1820;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+DomainExtends;No convertido (perdido);extiende COL_FuenteAdministrativaTipo;;1710;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+TopicExtends;No convertido (perdido);extiende LADM_Nucleo;;3268;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+TopicExtends;Convertido con pérdida parcial;Catastro_Registro extiende LADM_Nucleo;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::Catastro_Multiproposito::Modelo_Extendido_LADMCOL_Cat_Reg_V4_1::Catastro_Registro;3269;UML no permite generalizar paquetes. La extensión se conserva como comentario
+TopicExtends;No convertido (perdido);extiende LADM_Nucleo;;3270;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1819;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_FuenteAdministrativa;;3393;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadEspacial;;1067;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+DomainExtends;No convertido (perdido);extiende COL_DocumentoTipo;;949;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2295;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_Restriccion;;3604;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_Restriccion;;3601;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2309;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2296;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+TopicExtends;No convertido (perdido);extiende TIMESYSTEMS;;4015;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_CadenaCarasLimite;;1653;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+TopicExtends;No convertido (perdido);extiende LADM_Nucleo;;3267;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2301;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_Restriccion;;3603;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2310;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_FuenteAdministrativa;;3395;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1822;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_FuenteAdministrativa;;3394;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadEspacial;;1066;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2303;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Punto;;5030;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Punto;;5028;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Punto;;5029;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_FuenteAdministrativa;;1348;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_AgrupacionInteresados;;5255;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_AgrupacionInteresados;;5256;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+TopicExtends;No convertido (perdido);extiende LADM_Nucleo;;3266;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_AgrupacionInteresados;;5254;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1821;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+DomainExtends;No convertido (perdido);extiende COL_InteresadoTipo;;5611;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+DomainExtends;No convertido (perdido);extiende COL_InteresadoTipo;;5612;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Punto;;5032;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Punto;;5033;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2308;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1810;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2297;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2306;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadAdministrativaBasica;;7089;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadAdministrativaBasica;;7090;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadAdministrativaBasica;;7088;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2300;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteAdministrativa;;7854;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteAdministrativa;;7849;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteAdministrativa;;7846;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteAdministrativa;;7853;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteAdministrativa;;7847;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteAdministrativa;;7850;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_Restriccion;;3605;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadAdministrativaBasica;;7092;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadEspacial;;1063;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_Restriccion;;3602;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+DomainExtends;No convertido (perdido);extiende COL_PuntoTipo;;5562;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteAdministrativa;;7848;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8866;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8863;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8870;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8868;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8871;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8872;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8873;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8865;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8869;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8864;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteEspacial;;9080;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteEspacial;;9079;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteEspacial;;9081;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Punto;;5031;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteAdministrativa;;7852;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_FuenteAdministrativa;;7851;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadEspacial;;1061;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_UnidadAdministrativaBasica;;7091;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_Interesado;;8867;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende CR_DRR;;1824;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+ClassExtends;No convertido (perdido);extiende COL_DRR;;2316;Generalización huérfana. No está asociada a ninguna clase hija en el archivo
+UmlUsage;No convertido (perdido);overlaps usa intersects;;37;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);touches usa overlaps;;36;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);equals usa crosses;;64;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);intersects usa equals;;74;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);? usa Submodelo_Cartografia_Catastral_V1_1;;107;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);? usa Submodelo_Cartografia_Catastral_V1_1;;108;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);crosses usa contains;;65;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);Modelo_Extendido_LADMCOL_Cat_Reg_V4_1.ili usa ?;;272;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);? usa CC_Manzana;;1602;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);CC_Manzana usa ?;;1607;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);? usa LimitesOperativosCatastro;;1211;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);? usa col_rrrInteresado;;2093;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);LimitesOperativosCatastro usa Modelo_Extendido_LADMCOL_Cat_Reg_V4_1.ili;;270;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);? usa CR_UnidadConstruccionTipo;;244;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);? usa COL_UnidadEspacial;;1070;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);CR_CaracteristicasUnidadConstruccion usa ?;;2642;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);? usa CR_CaracteristicasUnidadConstruccion;;2631;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);? usa CR_PuntoLindero;;2857;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);m2 usa Area;;3224;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);CR_DerechoTipo usa ?;;3342;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);? usa CR_PuntoControlTipo;;3564;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);CR_Lindero usa ?;;3627;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);XMLDate usa XMLTime;;3754;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);INTERLIS_1_DATE usa NAME;;3884;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);ARCS usa STRAIGHTS;;3899;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);STANDARDOID usa I32OID;;3915;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);TimeOfDay usa BaseTimeSystems;;3958;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);elementCount usa isOfClass;;3909;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);objectCount usa elementCount;;3908;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);TEMPERATURE usa ELECTRIC_CURRENT;;3987;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);ELECTRIC_CURRENT usa TIME;;3988;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);COORDSYSTEM usa REFSYSTEM;;3944;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);GregorianDate usa GregorianYear;;4036;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);MASS usa LENGTH;;3926;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);LENGTH usa DIMENSIONLESS;;4055;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);cd usa sr;;4082;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);NAME usa URI;;3921;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);URI usa cd;;4094;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);rad usa mol;;4121;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);s usa kg;;4135;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);kg usa m;;4136;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);UUIDOID usa STANDARDOID;;3914;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);sr usa rad;;4083;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);REFSYSTEM usa AXIS;;4006;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);METAOBJECT usa ANYSTRUCTURE;;3974;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);ANYSTRUCTURE usa ANYCLASS;;3975;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);TIME usa MASS;;3925;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);UTC usa TimeOfDay;;3948;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);Y usa M;;4287;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);LUMINOUS_INTENSITY usa SOLID_ANGLE;;4196;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);len usa objectCount;;4346;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);lenM usa len;;4345;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);? usa col_responsableFuente;;1856;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);XMLDateTime usa XMLDate;;3753;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);AMOUNT_OF_MATTER usa TEMPERATURE;;4115;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);trimM usa trim;;4401;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);? usa CR_DerechoTipo;;3341;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);isEnumSubVal usa trimM;;4400;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);BaseTimeSystems usa Y;;4286;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);XMLTime usa GregorianDateTime;;4521;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);? usa CR_Lindero;;3624;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);? usa CR_PuntoControl;;2512;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);Modelo_Extendido_LADMCOL_Cat_Reg_V4_1.ili usa ?;;271;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);CR_PuntoLindero usa ?;;2864;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);M usa d;;4575;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);SurfaceBoundary usa SurfaceEdge;;4312;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);A usa s;;4843;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);COL_CadenaCarasLimite usa ?;;1660;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);METAOBJECT_TRANSLATION usa METAOBJECT;;3932;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);isOfClass usa isSubClass;;4363;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);inEnumRange usa isEnumSubVal;;4939;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);SCALSYSTEM usa COORDSYSTEM;;3941;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);col_baunitComoInteresado usa ?;;5395;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);CR_DocumentoTipo usa ?;;529;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);isSubClass usa myClass;;4655;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);ANYOID usa VALIGNMENT;;5315;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);? usa CR_DocumentoTipo;;528;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);LADM_Nucleo usa cm;;933;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);Modelo_Extendido_LADMCOL_Cat_Reg_V4_1 usa ?;;142;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);m usa MONEY;;5657;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);MONEY usa LUMINOUS_INTENSITY;;5658;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);Area usa COP;;5169;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);COL_PuntoTipo usa ?;;5563;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);ANYCLASS usa areAreas;;5862;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);areAreas usa convertUnit;;4146;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);GregorianDateTime usa GregorianDate;;4526;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);ANYUNIT usa ARCS;;5961;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);trim usa lenM;;4354;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);K usa A;;6153;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);SurfaceEdge usa ArcSegment;;4315;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);DIMENSIONLESS usa ANYUNIT;;4064;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);TIMEOFDAYSYS usa CALENDAR;;4027;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);StraightSegment usa StartSegment;;6252;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);StartSegment usa LineSegment;;6258;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);HALIGNMENT usa BOOLEAN;;6389;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);d usa h;;4576;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);SIGN usa SCALSYSTEM;;5486;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);convertUnit usa inEnumRange;;4147;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);ANGLE usa AMOUNT_OF_MATTER;;3894;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);CR_PuntoControl usa ?;;2520;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);ArcSegment usa StraightSegment;;6186;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);BOOLEAN usa INTERLIS_1_DATE;;3883;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);I32OID usa ANYOID;;5314;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);GregorianYear usa UTC;;3946;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);h usa min;;7488;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);LineSegment usa XMLDateTime;;7689;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);SOLID_ANGLE usa ANGLE;;3893;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);LineGeometry usa SurfaceBoundary;;7003;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);LineCoord usa UUIDOID;;5155;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);AXIS usa METAOBJECT_TRANSLATION;;3929;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);VALIGNMENT usa HALIGNMENT;;6388;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);min usa TIMESYSTEMS;;4016;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);COL_FuenteEspacial usa ?;;9083;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);TIMESYSTEMS usa SIGN;;4017;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);myClass usa LineCoord;;4656;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);cm usa m2;;934;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);? usa CC_Barrio;;5414;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);mol usa K;;4122;Alguno de los extremos no se convirtio (excluido o sin equivalente UML)
+UmlUsage;No convertido (perdido);CR_UnidadConstruccionTipo usa ?;;245;Dependencia con un extremo inexistente
+UmlUsage;No convertido (perdido);CR_PuntoControlTipo usa ?;;3565;Dependencia con un extremo inexistente
+Note;No convertido (perdido);Ficha_Predial_V2_2;;7370;La nota pertenece a un diagrama y no se importa
+Note;No convertido (perdido);Catastro_Registro_Nucleo_V2_2_0;;7366;La nota pertenece a un diagrama y no se importa
+Note;No convertido (perdido);Cartografia_Referencia_V2_1;;7368;La nota pertenece a un diagrama y no se importa
+Note;No convertido (perdido);Diagnostico_Juridico_V1_0;;7369;La nota pertenece a un diagrama y no se importa
+Note;No convertido (perdido);Avaluos_V2_1;;7367;La nota pertenece a un diagrama y no se importa
+IliImport;No convertido (perdido);IMPORT entre modelos;;130;La declaración IMPORT no tiene equivalente directo. La relación queda en las dependencias cuando existen
+IliImport;No convertido (perdido);IMPORT entre modelos;;143;La declaración IMPORT no tiene equivalente directo. La relación queda en las dependencias cuando existen
+IliImport;No convertido (perdido);IMPORT entre modelos;;144;La declaración IMPORT no tiene equivalente directo. La relación queda en las dependencias cuando existen
+IliImport;No convertido (perdido);IMPORT entre modelos;;110;La declaración IMPORT no tiene equivalente directo. La relación queda en las dependencias cuando existen
+IliImport;No convertido (perdido);IMPORT entre modelos;;111;La declaración IMPORT no tiene equivalente directo. La relación queda en las dependencias cuando existen
+IliImport;No convertido (perdido);IMPORT entre modelos;;220;La declaración IMPORT no tiene equivalente directo. La relación queda en las dependencias cuando existen
+UmlPackage;Excluido por la selección;TOOLS;Modelo_Extendido_LADMCOL_Catastro_Registro_V4_1::TOOLS;9;Paquete vacío omitido

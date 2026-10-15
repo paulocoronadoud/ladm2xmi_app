@@ -1,0 +1,25 @@
+﻿Tipo de elemento;Descripcion;En el archivo;Convertidos;Con pérdida parcial;Perdidos;Excluidos
+UmlModel;Modelo raíz;1;1;0;0;0
+UmlPackage;Paquete UML;3;2;0;0;1
+INTERLIS2Def;Archivo .ili (contenedor);6;6;0;0;0
+ModelDef;Modelo INTERLIS;6;4;0;0;2
+TopicDef;Tema (TOPIC);4;3;0;0;1
+ClassDef;Clase o estructura;89;67;0;0;22
+AttributeDef;Atributo;291;250;0;0;18
+AssociationDef;Asociacion;26;26;0;0;0
+RoleDef;Rol de asociación;52;52;0;0;0
+DomainDef;Dominio;60;36;9;0;15
+EnumElement;Elemento de enumeracion;378;357;21;0;0
+ClassExtends;Generalización de clases;129;27;0;91;11
+DomainExtends;Extensión de dominio;11;3;0;7;1
+TopicExtends;Extensión de tema;6;0;1;5;0
+UmlUsage;Dependencia (uso);181;61;0;120;0
+IliImport;Importación de modelo;6;0;0;6;0
+UnitDef;Unidad;30;0;0;4;26
+FunctionDef;Funcion;19;0;0;0;19
+LineFormTypeDef;Forma de línea;2;0;0;0;2
+MetaDataUseDef;Uso de metadatos;1;0;0;0;1
+ParameterDef;Parametro;5;0;0;0;5
+UmlTaggedValue;Valor etiquetado;95;95;0;0;0
+Diagram;Diagrama;17;17;0;0;0
+Note;Nota de diagrama;5;0;0;5;0
