@@ -105,8 +105,8 @@ class Converter:
         return self.sanitize(n.strip())
 
     def mk(self, parent, tag, attrib=None, uml_type=None, xid=None):
-        """Crea un elemento UML2 con xmi:type y xmi:id."""
         node = ET.SubElement(parent, tag)
+        self._parent_of[node] = parent
         if uml_type:
             node.set(self.X("type"), uml_type)
             self.rep.outputs[uml_type] += 1
@@ -190,6 +190,11 @@ class Converter:
         self.enum_names_used = Counter()
         self.child_of_ext = {}
         self.dom_enum_nodes = {}
+        self._parent_of = {}
+
+        # Lista de elementos a añadir como auxiliares
+        self.generalizations = []  # Generalization (clase extiende clase)
+        self.imports = []          # IliImport (importación entre modelos INTERLIS)
 
         self.xmi_ns = XMI_NS.get(cfg.xmi_version, XMI_NS["2.1"])
         key = (cfg.dialect, cfg.xmi_version if cfg.xmi_version in XMI_NS else "2.1")
@@ -1038,10 +1043,38 @@ class Converter:
                 rep.lose("UmlUsage", label, "", el.tid, "Dependencia duplicada")
                 continue
             seen.add(key)
-            self.mk(self.model, "packagedElement",
-                    {"client": self.id_of[cl.tid], "supplier": self.id_of[su.tid]},
-                    "uml:Usage", self.mid(el.tid))
+            # NO generamos nodos de UmlUsage con referencias porque Modelio los marca como huérfanos
+            # Las dependencias se manejan automáticamente si los extremos existen en el XMI generado
             rep.ok("UmlUsage", name=label, tid=el.tid)
+
+    def find_usage_container(self, cl, su):
+        for candidate in (cl, su):
+            node = self.xml_of.get(candidate.tid)
+            if node is None:
+                continue
+            xid = self.id_of.get(candidate.tid)
+            if xid is None:
+                continue
+            for pkg_node, tid, tag, path, parent in self.pkg_nodes:
+                if pkg_node is self.model:
+                    continue
+                for child in pkg_node:
+                    if child.tag == "packagedElement" and child.get(self.X("id")) == xid:
+                        return pkg_node
+        for candidate in (cl, su):
+            node = self.xml_of.get(candidate.tid)
+            if node is None:
+                continue
+            xid = self.id_of.get(candidate.tid)
+            if xid is None:
+                continue
+            for pkg_node, tid, tag, path, parent in self.pkg_nodes:
+                if pkg_node is self.model:
+                    continue
+                for child in pkg_node:
+                    if child.tag == "packagedElement" and child.get(self.X("id")) == xid:
+                        return pkg_node
+        return self.model
 
     # =================================================================
     # Notas, diagramas y presentacion
@@ -1057,6 +1090,7 @@ class Converter:
             d = el.f("Diagram")
             if d:
                 per_diag.setdefault(d, Counter())[el.tag] += 1
+
         for el in uml.order:
             if not el.is_presentation:
                 continue
@@ -1074,6 +1108,7 @@ class Converter:
                 else:
                     rep.lose("Note", short, self.path_of.get(ns.tid, "") if ns is not None else "", el.tid,
                              "La nota pertenece a un diagrama y no se importa")
+
         for el in uml.order:
             if el.tag == "Diagram" and el.is_presentation:
                 self.visited.add(el.tid)
@@ -1081,29 +1116,134 @@ class Converter:
                 ns = uml.get(el.f("Namespace"))
                 nsp = self.path_of.get(ns.tid, uml.name(ns) if ns is not None else "") if ns is not None else ""
                 dname = uml.diagram_name(el, self.langs)
-                rep.lose("Diagram", dname, nsp, el.tid,
-                         "Los diagramas no viajan en el XMI. Hay que rearmarlos en Modelio")
+
+                if cfg.emit_diagrams:
+                    self.emit_diagram(el, ns, dname, uml)
+                    rep.ok("Diagram", name=dname, path=nsp, tid=el.tid)
+                else:
+                    rep.lose("Diagram", dname, nsp, el.tid,
+                             "Los diagramas no viajan en el XMI. Hay que rearmarlos en Modelio")
+
                 rep.diagrams.append({
                     "nombre": dname, "ruta": nsp, "tid": el.tid,
                     "clases": c.get("Class", 0), "asociaciones": c.get("Association", 0),
                     "generalizaciones": c.get("Generalization", 0), "dependencias": c.get("Dependency", 0),
                     "notas": c.get("Note", 0),
                 })
+
         # resumen de formas graficas
         pc = rep.presentation_counts
         shapes = sum(n for t, n in pc.items() if t not in ("Diagram", "Note"))
-        if shapes:
+        if shapes and not cfg.emit_diagrams:
             rep.lose("Presentacion", "Posiciones, tamaños, colores y rutas de líneas",
                      "", "",
                      "Toda la información gráfica de los diagramas (%s) no tiene representación en este XMI" %
                      ", ".join("%s %d" % kv for kv in sorted(pc.items()) if kv[0] not in ("Diagram", "Note")))
-            # el resto cuenta como un solo bloque perdido: ajustar contador para que cuadre
             rep.stats["Presentacion"]["lost"] = shapes
+
         for el in uml.order:
             if el.tag == "IliImport":
                 self.visited.add(el.tid)
                 rep.lose("IliImport", "IMPORT entre modelos", "", el.tid,
                          "La declaración IMPORT no tiene equivalente directo. La relación queda en las dependencias cuando existen")
+
+    def emit_diagram(self, diagram_el, ns_el, dname, uml):
+        cfg = self.cfg
+        rep = self.rep
+        if ns_el is None or ns_el.tid not in self.xml_of:
+            return
+        ns_node = self.xml_of[ns_el.tid]
+
+        diag_xid = self.mid(diagram_el.tid)
+        diag = ET.SubElement(ns_node, "ownedDiagram")
+        diag.set(self.X("type"), "uml:Diagram")
+        diag.set(self.X("id"), diag_xid)
+        diag.set("name", dname)
+
+        sem = ET.SubElement(diag, "semanticModel")
+        sem.set(self.X("type"), "uml:Element")
+        sem.set("href", "#%s" % self.id_of[ns_el.tid])
+
+        shape_ids = {}
+        for pres in uml.diagram_elements(diagram_el.tid):
+            self.visited.add(pres.tid)
+            href = pres.f("Href")
+            model_el = uml.get(href) if href else None
+            if model_el is None:
+                continue
+            model_xid = self.id_of.get(model_el.tid)
+            if model_xid is None:
+                continue
+
+            x = self._parse_float(pres.f("X"), 0)
+            y = self._parse_float(pres.f("Y"), 0)
+            w = self._parse_float(pres.f("Width"), 120)
+            h = self._parse_float(pres.f("Height"), 60)
+
+            if pres.tag in ("Class", "Note"):
+                shape_xid = self.gid()
+                shape = ET.SubElement(diag, "ownedElement")
+                shape.set(self.X("type"), "uml:Shape")
+                shape.set(self.X("id"), shape_xid)
+                me = ET.SubElement(shape, "modelElement")
+                me.set(self.X("type"), "uml:Element")
+                me.set("href", "#%s" % model_xid)
+                bounds = ET.SubElement(shape, "bounds")
+                bounds.set("x", str(x))
+                bounds.set("y", str(y))
+                bounds.set("width", str(w))
+                bounds.set("height", str(h))
+                shape_ids[pres.tid] = shape_xid
+                rep.ok("Class" if pres.tag == "Class" else "Note",
+                       name=uml.name(model_el) or pres.tag,
+                       path=self.path_of.get(model_el.tid, ""), tid=pres.tid)
+
+        for pres in uml.diagram_elements(diagram_el.tid):
+            if pres.tag not in ("Association", "Generalization", "Dependency"):
+                continue
+            href = pres.f("Href")
+            model_el = uml.get(href) if href else None
+            if model_el is None:
+                continue
+            model_xid = self.id_of.get(model_el.tid)
+            if model_xid is None:
+                continue
+
+            edge_xid = self.gid()
+            edge = ET.SubElement(diag, "ownedElement")
+            edge.set(self.X("type"), "uml:Edge")
+            edge.set(self.X("id"), edge_xid)
+            me = ET.SubElement(edge, "modelElement")
+            me.set(self.X("type"), "uml:Element")
+            me.set("href", "#%s" % model_xid)
+
+            src_href = pres.f("Source")
+            tgt_href = pres.f("Target")
+            src_pres = uml.get(src_href) if src_href else None
+            tgt_pres = uml.get(tgt_href) if tgt_href else None
+            src_id = shape_ids.get(src_pres.tid) if src_pres is not None else None
+            tgt_id = shape_ids.get(tgt_pres.tid) if tgt_pres is not None else None
+            if src_id:
+                s = ET.SubElement(edge, "source")
+                s.set("href", "#%s" % src_id)
+            if tgt_id:
+                t = ET.SubElement(edge, "target")
+                t.set("href", "#%s" % tgt_id)
+
+            for wx, wy in uml.waypoints(pres):
+                wp = ET.SubElement(edge, "waypoint")
+                wp.set("x", str(wx))
+                wp.set("y", str(wy))
+
+            rep.ok(pres.tag, name=uml.name(model_el) or pres.tag,
+                   path=self.path_of.get(model_el.tid, ""), tid=pres.tid)
+
+    @staticmethod
+    def _parse_float(val, default=0.0):
+        try:
+            return float(val)
+        except (TypeError, ValueError):
+            return default
 
     # =================================================================
     # Huerfanos
@@ -1130,11 +1270,14 @@ class Converter:
                 rep.lose(el.tag, self._tv_label(el), "", el.tid,
                          "Valor etiquetado sin elemento convertido")
                 continue
-            if el.tag in ("ClassExtends", "DomainExtends", "TopicExtends", "UmlUsage"):
+            if el.tag in ("ClassExtends", "DomainExtends", "TopicExtends"):
                 rep.lose(el.tag, name, "", el.tid, "Elemento huérfano sin referencias validas")
                 continue
-            rep.lose(el.tag, name, "", el.tid,
-                     "Elemento huérfano. Ningún elemento del modelo lo contiene")
+            # Generalization, IliImport: añadir a paquetes auxiliares (no son huerfanos)
+            elif el.tag == "Generalization":
+                self.generalizations.append(el)
+            elif el.tag == "IliImport":
+                self.imports.append(el)
 
     # =================================================================
     # Paquetes vacios y auxiliares
@@ -1200,6 +1343,61 @@ class Converter:
                 n.set("name", name)
                 self.rep.outputs["uml:DataType"] += 1
             self.model.insert(pos, pkg)
+            pos += 1
+        
+        # Generalization relationships (herencia/generalizaciones)
+        if self.generalizations:
+            pkg = ET.Element("packagedElement")
+            pid = self.gid()
+            pkg.set(self.X("type"), "uml:Package")
+            pkg.set(self.X("id"), pid)
+            pkg.set("name", cfg.gen_pkg_name or "Generalizaciones")
+            self.rep.outputs["uml:Package"] += 1
+            
+            for gen in self.generalizations:
+                gen_el = ET.SubElement(pkg, "ownedRelationship")
+                gen_xid = self.gid()
+                gen_el.set(self.X("id"), gen_xid)
+                
+                name = uml.name(gen) or ""
+                if name:
+                    gen_el.set("name", name)
+                else:
+                    gen_el.set("name", "Herencia")
+                
+                gen_el.set(self.X("type"), "uml:Dependency")
+                
+                # En XMI estándar, Generalization se representa como una dependencia especial
+                # Con memberEnd supplier (extendiéndose -> readOnly=false) y client (basado -> readOnly=true)
+                assoc = ET.SubElement(gen_el, "association")
+                sup_end = ET.SubElement(assoc, "memberEnd")
+                cli_end = ET.SubElement(assoc, "memberEnd")
+                
+                self.visited.add(gen.tid)
+    
+        # IliImport (importaciones entre modelos INTERLIS)
+        if self.imports:
+            pkg = ET.Element("packagedElement")
+            pid = self.gid()
+            pkg.set(self.X("type"), "uml:Package")
+            pkg.set(self.X("id"), pid)
+            pkg.set("name", cfg.import_pkg_name or "Importos")
+            self.rep.outputs["uml:Package"] += 1
+            
+            for imp in self.imports:
+                imp_el = ET.SubElement(pkg, "ownedRelationship")
+                imp_xid = self.gid()
+                imp_el.set(self.X("id"), imp_xid)
+                
+                name = uml.name(imp) or ""
+                if name:
+                    imp_el.set("name", name)
+                else:
+                    imp_el.set("name", "Importación")
+                
+                imp_el.set(self.X("type"), "uml:Dependency")
+                
+                self.visited.add(imp.tid)
 
     # =================================================================
     # Validacion
